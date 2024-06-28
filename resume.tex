@@ -1,0 +1,263 @@
+%-------------------------
+% Resume in Latex
+% Author: Bruno Stefoni
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & {\footnotesize{#4}} \\
+        {{#2}} &  \footnotesize{#3}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Bruno Stefoni}
+\newcommand{\phone}{+1 646 203 7124}
+\newcommand{\emaila}{brunostefoni12@gmail.com}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+{
+\begin{tabularx}{\linewidth}{L}
+  \textbf{\LARGE \name} \\
+  \vspace{1pt}
+  New York, NY | \emaila\ | \phone \, |
+    \href{https://www.linkedin.com/in/bruno-stefoni/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}} |
+  \href{https://github.com/brunostefoni}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} |
+  \href{https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID}{\raisebox{0.0\height}{\footnotesize \faGraduationCap}\ {Scholar}}
+  
+
+\end{tabularx}
+}
+\vspace{-0.6cm} % Adjust this value as needed
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{\textbf{Professional Summary}}
+\vspace{0.1cm}
+Six years of experience with AI, Machine Learning and Data: deploying AI and ML models to the cloud; developing custom solutions with LLMs; building data pipelines for KPI tracking; designing A/B tests.
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CloudWerx}{AI / ML Engineer}
+      {Manhattan, New York}{Nov 2023 – Present}
+      \resumeItemListStart
+        \item {Developing ML and AI solutions using OSS, Google Cloud Platform, Vertex AI, and LLMs from client requirements.}
+        \item {Consulting clients from: cyber security, healthcare, finance, ecommerce, advertising, robotics, architecture.}
+        \item {Past projects: custom RAG/LLM implementation; MLOps workshop; fine-tuning pipeline for diffusion model.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Aetna - CVS Health}{Data Scientist}
+      {Manhattan, New York}{Sep 2023 – Oct 2023}
+      \resumeItemListStart
+        \item {Designed A/B test experiment with 9 MM MAU App to measure campaign impact on customer adoption KPIs.}
+        \item {Analyzed data in GCP Big Query to perform demographic analysis for a live A/A experiment.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Sortile}{Data Scientist}
+      {Manhattan, New York}{Jun 2023 – Aug 2023}
+      \resumeItemListStart
+        \item {Built a 92\% accurate XGBoost classifier to identify black/white fibers using light wavelength sensor data.}
+        \item {Developed and benchmarked XGBoost, LGBM and Deep Learning models. Deployed XGB model on AWS Lambda.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Google}{Data Scientist Intern}
+      {Mountain View, California}{Jun 2022 – Aug 2022}
+      \resumeItemListStart
+        \item {Conducted detailed market research and graph analysis by building a network dataset from diverse data sources using PLX, BigQuery and Python.}
+        \item {Detected up to 15\% of user churn by continuous survival and time series analysis of Software adoption rate data.}
+        \item {Presented insights to internal stakeholders and management. Proposed a new methodology for analysts.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {STP}{Data Scientist}
+      {Santiago, Chile}{May 2018 – May 2022}
+      \resumeItemListStart
+        \item {Built and implemented a company-wide chat bot on prem cloud server to support management and on-site workers.}
+        \item {Drove STP's revenue by identifying routes with up to 25\% difference between planned and real bus speeds.}
+        \item {Prevented \$500K investment on less accurate tech by launching a statistical study.}
+        \item {Detected data outliers due to faulty batteries in 20\% of STP's electric fleet via statistical analysis.}
+        \item {Increased main contract KPI by 6\% by scraping Twitter data to alert service disruptions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\vspace{-0.5cm} % Adjust this value as needed
+
+%-----------PROJECTS AND PUBLICATIONS-----------------
+\section{\textbf{Projects and Publications}}
+\resumeSubHeadingListStart
+  \resumePOR{Anky}{Developed RAG + SFT/DPO fine tuned LLM with llama.cpp using social network data }{}
+  \resumePOR{S\&P Global Capstone Project}{News classification by fine-tuning BERT from unlabeled data (97\% accuracy)}{}
+  \resumePOR{Master's Thesis Publications}{Two papers published on computer microscopic simulation}{}
+  \resumePOR{Deep Learning Competition}{Next frame video prediction using Transformer and CNN (ResNet) in JEPA network}{}
+  \resumePOR{Text Topic Analysis}{LDA and GloVe word embeddings on large academic thesis corpus}{}
+  \resumePOR{Twitter Sentiment Analysis}{Using fastText and fine-tuning BERT for content strategy assessment}{}
+  \resumePOR{Hackathon Winner}{Led team of 6, designed and developed an app for transit users}{}
+\resumeSubHeadingListEnd
+
+\vspace{-0.2cm} % Adjust this value as needed
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NEW YORK UNIVERSITY}{Master of Science in Data Science}
+      {GPA: 3.8/4.0}{2021 – 2023}
+      \resumeItemListStart
+        \item {Coursework: Deep Learning, Machine Learning, Big Data, Optimization \& Linear Algebra, Probability \& Statistics}
+        \item {TA of Data Science Class at NYU Business School for two semesters}
+      \resumeItemListEnd
+      
+% Force a page break here
+\clearpage
+. \vspace{0.4cm}
+    \resumeSubheading
+      {UNIVERSIDAD DE CHILE}{Bachelor and Master's degree in Engineering}
+      {Final grade 6.6/7.0}{2018}
+      \resumeItemListStart
+        \item {Graduated with highest distinction in top 10\% GPA of cohort}
+        \item {Granted Outstanding Student Award}
+        \item {TA of five different courses, e.g., Stochastic Processes, Network Optimization}
+        \item {Key Modules: Data Mining, Computer Science I and II, Probability, Statistics, Optimization, Operations Research}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-0.3cm}
+
+%-----------SKILLS-----------------
+\section{\textbf{Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+    \textbf{Certifications:} Google Professional Machine Learning Engineer \\
+     \textbf{Programming Languages:} Python, R, MATLAB, Java \\
+     \textbf{AI Libraries:} Transformers, Langchain, OpenAI API, Anthropic API, Pydantic, HuggingFace \\
+     \textbf{ML Libraries:} PyTorch, PyTorch-Lightning, XGBoost, LGBM, scikit-learn, statsmodels \\
+     \textbf{Cloud Platforms:} Google Cloud Platform (GCP), AWS \\
+     \textbf{Databases:} SQL, BigQuery, Vector DBs (Milvus, Pinecone) \\
+     \textbf{DevOps:} Git, Docker, Terraform, Bash, Linux \\
+     \textbf{Data Analysis:} Pandas, NumPy, Plotly, Seaborn, Matplotlib \\
+     \textbf{NLP:} NLTK, SpaCy, fastText \\
+     \textbf{Big Data:} pySpark, Dask \\
+     \textbf{Languages:} Native English and Spanish speaker, Intermediate Italian
+    }}
+ \end{itemize}
+
+\end{document}
